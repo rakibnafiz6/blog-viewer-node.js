@@ -1,4 +1,5 @@
-import Navbar from "@/components/Navbar";
+import BlogPostTitle from "@/components/BlogPostTitle";
+
 
 
 export default function Home() {
@@ -6,8 +7,8 @@ export default function Home() {
   
   return (
     <>
-      <Navbar></Navbar>
       
+      <BlogPostTitle></BlogPostTitle>
     </>
   );
 }

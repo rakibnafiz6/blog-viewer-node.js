@@ -1,21 +1,22 @@
 
 import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
 import {LoginLink, LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
+import Link from "next/link";
 
 
 
 const Navbar = async() => {
     const links = <>
-   <li className="btn btn-xs mr-2">Home</li>
-   <li className="btn btn-xs">Profile</li>
+   <Link href='/'><li className="btn btn-xs mr-2 mb-2 lg:mb-0">Home</li></Link>
+   <Link href='/profile'><li className="btn btn-xs">Profile</li></Link>
   </>
 
 const {isAuthenticated} = getKindeServerSession();
 const isUserAuthenticated = await isAuthenticated();
 
     return (
-        <div className="navbar bg-slate-400">
-            <div className="navbar-start pl-5">
+        <div className="navbar bg-slate-400 sticky top-0 z-50">
+            <div className="navbar-start md:pl-5">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg

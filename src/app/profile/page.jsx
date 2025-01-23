@@ -22,7 +22,7 @@ const page = () => {
 
     return (
         <div>
-            <h2 className="text-center text-2xl md:text-3xl font-bold mt-40">Welcome to your profile!</h2>
+            <h2 className="text-center text-2xl md:text-3xl font-bold mt-40">Welcome to your Profile!</h2>
             
         </div>
     );
